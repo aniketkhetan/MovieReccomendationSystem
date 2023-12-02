@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle 
 
-movies = pd.read_csv('./ml-25m/movies.csv')
+movies = pd.read_csv('movies.csv')
 
 
 def clean_title(title):
@@ -43,7 +43,7 @@ def search(title):
 
 
 
-ratings = pd.read_csv('./ml-25m/ratings.csv')
+ratings = pd.read_csv('ratings.csv')
 
 
 def finding_recs(title):
